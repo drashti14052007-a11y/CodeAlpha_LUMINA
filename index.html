@@ -26,24 +26,43 @@
 
   <!-- Navigation -->
   <nav class="nav" id="nav">
-    <a href="#" class="nav-logo">LUMINA</a>
 
-    <div class="nav-filters" id="navFilters">
-      <button class="filter-btn active" data-filter="all">All</button>
-      <button class="filter-btn" data-filter="nature">Nature</button>
-      <button class="filter-btn" data-filter="urban">Urban</button>
-      <button class="filter-btn" data-filter="portrait">Portrait</button>
-      <button class="filter-btn" data-filter="abstract">Abstract</button>
+    <!-- Row 1: Logo + Toggle -->
+    <div class="nav-row nav-row--top">
+      <a href="#" class="nav-logo">
+        <img
+          src="logo.png"
+          alt="LUMINA Visual Archive"
+          class="nav-logo-img"
+          width="160"
+          height="90"
+          loading="eager"
+          onerror="this.style.display='none'; this.parentElement.setAttribute('data-text','LUMINA');"
+        />
+      </a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☀</button>
     </div>
 
-    <div class="nav-view-tabs" id="navViewTabs">
-      <button class="view-tab active" data-view="gallery">Gallery</button>
-      <button class="view-tab" data-view="library">Library</button>
-      <button class="view-tab" data-view="explore">Explore</button>
+    <!-- Row 2: View tabs -->
+    <div class="nav-row nav-row--tabs">
+      <div class="nav-view-tabs" id="navViewTabs">
+        <button class="view-tab active" data-view="gallery">Gallery</button>
+        <button class="view-tab" data-view="library">Library</button>
+        <button class="view-tab" data-view="explore">Explore</button>
+      </div>
     </div>
 
-    <span class="nav-count" id="navCount">09 Works</span>
-<button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☀</button>
+    <!-- Row 3: Filter pills -->
+    <div class="nav-row nav-row--filters">
+      <div class="nav-filters" id="navFilters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+        <button class="filter-btn" data-filter="urban">Urban</button>
+        <button class="filter-btn" data-filter="portrait">Portrait</button>
+        <button class="filter-btn" data-filter="abstract">Abstract</button>
+      </div>
+    </div>
+
   </nav>
 
   <!-- Hero -->
@@ -260,6 +279,11 @@
       </div>
     </div>
   </div>
+
+<!-- Ambient orbs -->
+  <div class="orb orb--violet" aria-hidden="true"></div>
+  <div class="orb orb--blue" aria-hidden="true"></div>
+  <div class="orb orb--cyan" aria-hidden="true"></div>
 
   <script src="script.js"></script>
 </body>
