@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="LUMINA — A curated visual archive of nature, urban, portrait and abstract photography." />
+<meta name="theme-color" content="#080808" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📷</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Cursor glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <span class="loader-label">LUMINA</span>
+      <div class="loader-bar"></div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav-logo">LUMINA</a>
+
+    <div class="nav-filters" id="navFilters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="nature">Nature</button>
+      <button class="filter-btn" data-filter="urban">Urban</button>
+      <button class="filter-btn" data-filter="portrait">Portrait</button>
+      <button class="filter-btn" data-filter="abstract">Abstract</button>
+    </div>
+
+    <div class="nav-view-tabs" id="navViewTabs">
+      <button class="view-tab active" data-view="gallery">Gallery</button>
+      <button class="view-tab" data-view="library">Library</button>
+      <button class="view-tab" data-view="explore">Explore</button>
+    </div>
+
+    <span class="nav-count" id="navCount">09 Works</span>
+<button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☀</button>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <p class="hero-eyebrow">Visual Archive — 2025</p>
+    <h1 class="hero-title">
+      <span class="hero-line" data-line="1">The Art</span>
+      <span class="hero-line hero-line--italic" data-line="2">of Seeing</span>
+    </h1>
+    <p class="hero-sub">A curated collection of light, form &amp; perspective</p>
+    <div class="hero-scroll-hint">
+      <div class="hero-scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery-section" id="gallerySection">
+
+    <!-- 01 — Wide strip -->
+    <div class="gallery-strip">
+      <div class="gallery-item gallery-item--wide" data-index="0" data-category="nature">
+        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1400&h=700&fit=crop" alt="Horizon" loading="lazy" />
+        <div class="item-overlay">
+          <span class="item-num">01</span>
+          <span class="item-title">Horizon</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 02, 03, 04 — Asymmetric -->
+    <div class="gallery-asymmetric">
+      <div class="gallery-item gallery-item--tall" data-index="1" data-category="portrait">
+        <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=700&h=1000&fit=crop" alt="Presence" loading="lazy" />
+        <div class="item-overlay">
+          <span class="item-num">02</span>
+          <span class="item-title">Presence</span>
+        </div>
+      </div>
+      <div class="gallery-col-right">
+        <div class="gallery-item" data-index="2" data-category="urban">
+          <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=700&h=500&fit=crop" alt="Nocturne" loading="lazy" />
+          <div class="item-overlay">
+            <span class="item-num">03</span>
+            <span class="item-title">Nocturne</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-index="3" data-category="abstract">
+          <img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=700&h=500&fit=crop" alt="Texture" loading="lazy" />
+          <div class="item-overlay">
+            <span class="item-num">04</span>
+            <span class="item-title">Texture</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quote -->
+    <div class="gallery-quote">
+      <blockquote>"To photograph is to hold one's breath — all faculties converging to capture fleeting reality."</blockquote>
+      <cite>— Henri Cartier-Bresson</cite>
+    </div>
+
+    <!-- 05, 06, 07 — Trio -->
+    <div class="gallery-trio">
+      <div class="gallery-item" data-index="4" data-category="nature">
+        <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=600&h=700&fit=crop" alt="Mist" loading="lazy" />
+        <div class="item-overlay">
+          <span class="item-num">05</span>
+          <span class="item-title">Mist</span>
+        </div>
+      </div>
+      <div class="gallery-item gallery-item--raised" data-index="5" data-category="urban">
+        <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&h=700&fit=crop" alt="Structure" loading="lazy" />
+        <div class="item-overlay">
+          <span class="item-num">06</span>
+          <span class="item-title">Structure</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-index="6" data-category="portrait">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=700&fit=crop" alt="Shadow" loading="lazy" />
+        <div class="item-overlay">
+          <span class="item-num">07</span>
+          <span class="item-title">Shadow</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 08, 09 — Duo -->
+    <div class="gallery-duo">
+      <div class="gallery-item" data-index="7" data-category="abstract">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=550&fit=crop" alt="Luminance" loading="lazy" />
+        <div class="item-overlay">
+          <span class="item-num">08</span>
+          <span class="item-title">Luminance</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-index="8" data-category="nature">
+        <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=800&h=550&fit=crop" alt="Dusk" loading="lazy" />
+        <div class="item-overlay">
+          <span class="item-num">09</span>
+          <span class="item-title">Dusk</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Library Section -->
+  <section class="library-section" id="librarySection">
+
+    <div class="library-category">
+      <div class="library-heading">
+        <span class="library-heading-label">Nature</span>
+        <span class="library-heading-count">03 Works</span>
+      </div>
+      <div class="library-grid">
+        <div class="gallery-item" data-index="0" data-category="nature">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop" alt="Horizon" loading="lazy" />
+          <div class="item-overlay"><span class="item-num">01</span><span class="item-title">Horizon</span></div>
+        </div>
+        <div class="gallery-item" data-index="4" data-category="nature">
+          <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=600&h=400&fit=crop" alt="Mist" loading="lazy" />
+          <div class="item-overlay"><span class="item-num">05</span><span class="item-title">Mist</span></div>
+        </div>
+        <div class="gallery-item" data-index="8" data-category="nature">
+          <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=600&h=400&fit=crop" alt="Dusk" loading="lazy" />
+          <div class="item-overlay"><span class="item-num">09</span><span class="item-title">Dusk</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="library-category">
+      <div class="library-heading">
+        <span class="library-heading-label">Urban</span>
+        <span class="library-heading-count">02 Works</span>
+      </div>
+      <div class="library-grid">
+        <div class="gallery-item" data-index="2" data-category="urban">
+          <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=600&h=400&fit=crop" alt="Nocturne" loading="lazy" />
+          <div class="item-overlay"><span class="item-num">03</span><span class="item-title">Nocturne</span></div>
+        </div>
+        <div class="gallery-item" data-index="5" data-category="urban">
+          <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&h=400&fit=crop" alt="Structure" loading="lazy" />
+          <div class="item-overlay"><span class="item-num">06</span><span class="item-title">Structure</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="library-category">
+      <div class="library-heading">
+        <span class="library-heading-label">Portrait</span>
+        <span class="library-heading-count">02 Works</span>
+      </div>
+      <div class="library-grid">
+        <div class="gallery-item" data-index="1" data-category="portrait">
+          <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600&h=400&fit=crop" alt="Presence" loading="lazy" />
+          <div class="item-overlay"><span class="item-num">02</span><span class="item-title">Presence</span></div>
+        </div>
+        <div class="gallery-item" data-index="6" data-category="portrait">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop" alt="Shadow" loading="lazy" />
+          <div class="item-overlay"><span class="item-num">07</span><span class="item-title">Shadow</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="library-category">
+      <div class="library-heading">
+        <span class="library-heading-label">Abstract</span>
+        <span class="library-heading-count">02 Works</span>
+      </div>
+      <div class="library-grid">
+        <div class="gallery-item" data-index="3" data-category="abstract">
+          <img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=600&h=400&fit=crop" alt="Texture" loading="lazy" />
+          <div class="item-overlay"><span class="item-num">04</span><span class="item-title">Texture</span></div>
+        </div>
+        <div class="gallery-item" data-index="7" data-category="abstract">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop" alt="Luminance" loading="lazy" />
+          <div class="item-overlay"><span class="item-num">08</span><span class="item-title">Luminance</span></div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Explore Section -->
+  <section class="explore-section" id="exploreSection" style="display:none; opacity:0;">
+    <div class="explore-header">
+      <h2 class="explore-title">Explore</h2>
+      <p class="explore-sub">Every frame. Every category. All in one place.</p>
+    </div>
+    <div class="explore-grid" id="exploreGrid">
+      <!-- Populated by JS -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <span class="footer-logo">LUMINA</span>
+    <span class="footer-copy">&copy; 2025 Visual Archive</span>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <div class="lb-backdrop"></div>
+    <button class="lb-close" id="lightboxClose">&#x2715;</button>
+    <button class="lb-prev" id="lightboxPrev">&#8592;</button>
+    <button class="lb-next" id="lightboxNext">&#8594;</button>
+    <div class="lb-stage">
+      <img class="lb-img" id="lightboxImg" src="" alt="" />
+      <div class="lb-meta">
+        <span class="lb-num" id="lightboxNum"></span>
+        <span class="lb-caption" id="lightboxTitle"></span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
