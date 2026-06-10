@@ -1600,3 +1600,18 @@ body::before {
     border-radius: 8px !important;
   }
 }
+/* ── NAV ROW FORCE FIX ── */
+.nav-row--tabs,
+.nav-row--filters {
+  width: 100% !important;
+  display: flex !important;
+}
+
+.nav-row--tabs {
+  border-bottom: 1px solid rgba(0, 212, 255, 0.06) !important;
+}
+
+.nav-view-tabs {
+  width: 100% !important;
+  justify-content: space-around !important;
+}
