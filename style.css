@@ -1563,3 +1563,40 @@ body::before {
   body::before { animation: none !important; }
   .nav-logo-img { animation: none !important; }
 }
+/* ── MOBILE NAV FIX ── */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    padding: 0 !important;
+  }
+
+  .nav-row--top {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 0.8rem 1.2rem !important;
+  }
+
+  .nav-row--tabs {
+    display: flex !important;
+    padding: 0.4rem 1.2rem !important;
+    overflow-x: auto !important;
+  }
+
+  .nav-row--filters {
+    display: flex !important;
+    padding: 0.4rem 1.2rem 0.6rem !important;
+    overflow-x: auto !important;
+  }
+
+  .nav-view-tabs {
+    width: 100% !important;
+    border-radius: 8px !important;
+  }
+
+  .nav-filters {
+    width: max-content !important;
+    border-radius: 8px !important;
+  }
+}
